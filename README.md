@@ -3,9 +3,9 @@
 Welcome to the project repository for weCollab Mobile Version. This version of the application was developed using Android Studio and Kotlin, and it includes various features to enhance user experience and functionality. We have integrated Firebase storage to manage users' purchases and product data information. Additionally, we have implemented the MVVM (Model-View-ViewModel) architecture to improve the scalability and testability of the application.
 
 ## Table of Contents
-## Installation
-## Features
-## Usage
+* Installation
+* Features
+* Usage
 
 
 To get started with the weCollab Mobile Version, please follow these steps:
