@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout_purchaseItem_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="10dp">
+
+    <ImageView
+        android:id="@+id/imageView_purchaseItem_image"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="40"
+        android:contentDescription="@string/app_placeholder"
+        android:scaleType="center"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="60">
+
+        <TextView
+            android:id="@+id/textView_purchaseItem_itemName"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="51dp"
+            android:gravity="center"
+            android:text="@string/app_placeholder"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView_purchaseItem_amount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_purchaseItem_amount"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/app_placeholder"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView_purchaseItem_price"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_purchaseItem_itemName" />
+
+        <TextView
+            android:id="@+id/textView_purchaseItem_price"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/app_placeholder"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ItemFragment">
+
+    <TextView
+        android:id="@+id/textView_item_productName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/app_placeholder"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView_item_productImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="50dp"
+        android:contentDescription="@string/app_placeholder"
+        android:src="@drawable/sneaker" />
+
+    <TextView
+        android:id="@+id/textView_item_productDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="start|center_vertical"
+        android:paddingHorizontal="10dp"
+        android:text="@string/app_placeholder"
+        android:textSize="26sp" />
+
+    <Spinner
+        android:id="@+id/spinner_item_sizecontainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@drawable/spinner_background"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView_item_productPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:gravity="center_vertical|end"
+        android:paddingHorizontal="10dp"
+        android:text="@string/app_placeholder"
+        android:textSize="24sp" />
+
+
+    <Button
+        android:id="@+id/button_item_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#020202"
+        android:text="@string/fragment_item_button_addToCart"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

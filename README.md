@@ -1,2 +1,1 @@
-# weCollab-android
-A ecommerce android application
+# term-project-wecollab

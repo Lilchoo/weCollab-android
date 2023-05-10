@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">term-project-wecollab</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_title">weCollab</string>
+    <string name="app_password_title">Password</string>
+    <string name="app_email_title">Email</string>
+    <string name="user_signup">Sign Up</string>
+    <string name="user_login">Login</string>
+    <string name="user_signup_prompt">You new? Sign up here</string>
+    <string name="user_login_prompt">Have an account? Login</string>
+    <string name="app_name_title">Name</string>
+    <string name="cart_title">Cart</string>
+    <string name="home_title">Home</string>
+    <string name="app_cancel_title">Cancel</string>
+    <string name="app_confirm_title">Confirm</string>
+    <string name="reauthenticate_reconfirm_creds">Reconfirm Your Credentials</string>
+    <string name="editProfile_edit_title">Edit</string>
+    <string name="app_purchases_title">Purchases</string>
+    <string name="app_empty" />
+    <string name="app_placeholder">placeholder</string>
+    <string name="purchases_orderNumber_title">Order Number</string>
+    <string name="purchases_totalItemsTitle">Total Items</string>
+    <string name="purchases_totalPriceTitle">Total Price</string>
+    <string name="purchases_purchaseDateTitle">Purchase Date</string>
+    <string name="fragment_home_textView_title">Categories</string>
+    <string name="fragment_home_tabItem_shoe_title">Shoe</string>
+    <string name="fragment_home_tabItem_tShirt_title">T-Shirt</string>
+    <string name="fragment_home_tabItem_pants_title">Pants</string>
+    <string name="fragment_home_tabItem_jacket_title">Jacket</string>
+    <string name="fragment_cart_button_purchaseOrder">Purchase Order</string>
+    <string name="fragment_cart_button_clearCart">Clear Cart</string>
+    <string name="fragment_home_search">Search…</string>
+    <string name="product_amount">x1</string>
+    <string name="placeholder">Placeholder</string>
+    <string name="fragment_item_button_addToCart">ADD TO CART</string>
+    <string name="app_logout">Logout</string>
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.term_project_wecollab.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_itemFragment"
+            app:destination="@id/itemFragment"
+            app:popUpToSaveState="true"
+            app:popUpTo="@id/homeFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/itemFragment"
+        android:name="com.example.term_project_wecollab.ItemFragment"
+        android:label="fragment_item"
+        tools:layout="@layout/fragment_item" >
+        <action
+            android:id="@+id/action_itemFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpToSaveState="true"
+            app:popUpTo="@id/itemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.term_project_wecollab.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/action_cartFragment_self"
+            app:destination="@id/cartFragment"
+            app:popUpToSaveState="true"
+            app:popUpTo="@id/cartFragment" />
+        <action
+            android:id="@+id/action_cartFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.term_project_wecollab.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment"
+            app:popUpToSaveState="true"
+            app:popUpTo="@id/profileFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_purchaseHistoryItemDetailFragment"
+            app:destination="@id/purchaseHistoryItemDetailFragment"
+            app:popUpToSaveState="true"
+            app:popUpTo="@id/profileFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.term_project_wecollab.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" >
+        <action
+            android:id="@+id/action_editProfileFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:popUpToSaveState="true"
+            app:popUpTo="@id/editProfileFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/purchaseHistoryItemFragment"
+        android:name="com.example.term_project_wecollab.PurchaseHistoryItemFragment"
+        android:label="fragment_purchase_history_item"
+        tools:layout="@layout/fragment_purchase_history_item" />
+    <fragment
+        android:id="@+id/purchaseHistoryItemDetailFragment"
+        android:name="com.example.term_project_wecollab.PurchaseHistoryItemDetailFragment"
+        android:label="fragment_purchase_history_item_detail"
+        tools:layout="@layout/fragment_purchase_history_item_detail" >
+        <action
+            android:id="@+id/action_purchaseHistoryItemDetailFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:popUpToSaveState="true"
+            app:popUpTo="@id/purchaseHistoryItemDetailFragment"/>
+        <argument
+            android:name="orderNumber"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeItemFragment"
+        android:name="com.example.term_project_wecollab.HomeItemFragment"
+        android:label="fragment_home_item"
+        tools:layout="@layout/fragment_home_item" />
+</navigation>
