@@ -23,9 +23,3 @@ The weCollab Mobile Version offers the following features:
 * Payment processing: Users can securely make payments for their purchases.
 * Firebase integration: Firebase storage is used to manage users' purchases and product data information.
 * MVVM architecture: The application follows the MVVM pattern, separating concerns and improving scalability and testability.
-
-Usage
-*Ensure you have completed the installation steps mentioned above.
-*Connect an Android device or emulator to your development environment.
-*Build and run the application using Android Studio.
-*You should now be able to explore the weCollab Mobile Version, browse products, manage your cart, and make purchases securely.
